@@ -165,7 +165,8 @@ export default class embedFormView extends View {
 		const labeledInput = new LabeledInputView( this.locale, InputTextView );
 
 		labeledInput.label = t( 'Embed Code' );
-		labeledInput.inputView.placeholder = 'Place Y-tube/vimeo video url/embed-code here.';
+		labeledInput.infoText = t( 'Paste the video URL (YouTube/Vimeo) or iframe code in the input.' );
+		labeledInput.inputView.placeholder = 'https://example.com';
 
 		return labeledInput;
 	}
