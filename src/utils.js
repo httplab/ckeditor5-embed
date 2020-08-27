@@ -52,7 +52,7 @@ export function parseMediaEmbed( src ) {
 			_frameborder = parseInt(src_element[i].replace(/frameborder|=|"/g,''));
 		}
 		if(src_element[i].includes("src=")){
-			_src = src_element[i].replace(/src|=|"/g,'');
+			_src = src_element[i].replace(/src=|"/g,'');
 		}
 	}
 
