@@ -32,7 +32,9 @@ export default class EmbedEditing extends Plugin {
 			model: 'embed',
 			view: ( modelElement, viewWriter ) => {
 				if( viewWriter ){
-					const figure = viewWriter.createContainerElement( 'figure', { class: (enablePlayer?'embed':'embed embed_wrapper') } );
+					const figure = viewWriter.createContainerElement( 'figure', { class: (enablePlayer?'embed':'embed embed_wrapper'),
+						style: 'clear: both; margin: 1em 0; display: block; min-width: 15em; padding-bottom: 56%; position: relative;'
+					} );
 					const iframeElement = viewWriter.createEmptyElement( 'iframe', modelElement.getAttributes() );
 					const label = t( 'embed widget' );
 					viewWriter.insert( viewWriter.createPositionAt( figure, 0 ), iframeElement );
