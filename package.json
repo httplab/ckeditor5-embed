@@ -17,5 +17,8 @@
   "files": [
     "src",
     "theme"
-  ]
+  ],
+  "dependencies": {
+    "he": "^1.2.0"
+  }
 }
